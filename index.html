@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="hazallllll">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM- Documents</title>
+    <style>
+        .bicim {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid rebeccapurple;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- getElementByID() -->
+    <div id="ex_1">Hazal Yılmaz</div>
+    <button onclick="deneme()">Buraya Tıklayınız</button>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- getElementsByName()-->
+    <div>Hazalın en sevdiği hayvan <span name="hayvanAdi">sibirya kurdu</span>' dur. Çağrı ' nın en sevdiği hayvan <span name="hayvanAdi">kedi</span> ' dir. Derya' nın en sevdiği hayvan <span name="hayvanAdi">kuş</span> ' tur.  </div>  <br>
+    <div>Hayvan Sayısı: <span id="hayvanSayisi" style="font-weight: 600;"></span></div>
+    <div>Hayvan Alani: <span id="hayvanAlani" style="font-weight: 600;" ></span></div> 
+    <div>Tüm Hayvanlar: <span id="hayvanlarAll" style="font-weight: 600;" ></span></div> 
+    <hr> 
+    <!-- ---------------------------- -->
+
+    <!-- getElementsByName() - ex2-->
+    <div>İlgi Alanlarınız</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Alışveriş">Alışveriş</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Eğlence">Eğlence</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Sinema">Sinema</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Tiyatro">Tiyatro</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Gezi">Gezi</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Teknoloji">Teknoloji</div>
+    <button onclick="islemSecme()">Hepsini Seç</button>
+    <button onclick="islemTemizle()">Seçimi Temizle</button>
+    <hr> 
+    <!-- ---------------------------- -->
+
+
+    <!-- getElementsByTagName()-->
+    <div>Hazal Yılmaz</div>
+    <p>Js Eğitim Seti</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <hr> 
+    <!-- ---------------------------- -->
+
+    <!-- getElementsByClassName()-->
+    <div class="bicim iki">HTML Eğitim</div>
+    <div class="bicim">CSS Eğitim</div>
+    <div class="bicim">JS Eğitim</div>
+    <div class="bicim iki">JQery Eğitim</div>
+    <br>
+    <div>Sonuç <span id="sonuca" style="font-weight: 600;"></span></div>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- doctype-->
+
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- documentElement-->
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- implementaion -->
+    <div id="sonucAlanii"></div>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- body -->
+    <button onclick="islemSari()">Sarı</button>
+    <button onclick="islemMavi()">Mavi</button>
+    <button onclick="islemMor()">Mor</button>
+    <button onclick="islemSiyah()">Siyah</button>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- head -->
+
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- head -->
+
+
+
+
+
+
+
+    <script src="/getElementById.js"></script>
+    <script src="/getElementsByName.js"></script>
+    <script src="/getElementsByName-ex2.js"></script>
+    <script src="/getElementsByTagName.js"></script>
+    <script src="/getElementsByClassName.js"></script>
+    <script src="/doctype.js"></script>
+    <script src="/documentElement.js"></script>
+    <script src="/implementation.js"></script>
+    <script src="/body.js"></script>
+    <script src="/head.js"></script>
+</body>
+</html>
