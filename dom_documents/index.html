@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="hazallllll">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM- Documents</title>
+    <style>
+        .bicim {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid rebeccapurple;
+        }
+        body {
+            color: #323232;
+            font-size: 20px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="/dom_documents/style.css">
+</head>
+<body>
+    <!-- getElementByID() -->
+    <div id="ex_1">Hazal Yılmaz</div>
+    <button onclick="deneme()">Buraya Tıklayınız</button>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- getElementsByName()-->
+    <div>Hazalın en sevdiği hayvan <span name="hayvanAdi">sibirya kurdu</span>' dur. Çağrı ' nın en sevdiği hayvan <span name="hayvanAdi">kedi</span> ' dir. Derya' nın en sevdiği hayvan <span name="hayvanAdi">kuş</span> ' tur.  </div>  <br>
+    <div>Hayvan Sayısı: <span id="hayvanSayisi" style="font-weight: 600;"></span></div>
+    <div>Hayvan Alani: <span id="hayvanAlani" style="font-weight: 600;" ></span></div> 
+    <div>Tüm Hayvanlar: <span id="hayvanlarAll" style="font-weight: 600;" ></span></div> 
+    <hr> 
+    <!-- ---------------------------- -->
+
+    <!-- getElementsByName() - ex2-->
+    <div>İlgi Alanlarınız</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Alışveriş">Alışveriş</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Eğlence">Eğlence</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Sinema">Sinema</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Tiyatro">Tiyatro</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Gezi">Gezi</div>
+    <div><input name="ilgiAlanlari" type="checkbox" value="Teknoloji">Teknoloji</div>
+    <button onclick="islemSecme()">Hepsini Seç</button>
+    <button onclick="islemTemizle()">Seçimi Temizle</button>
+    <hr> 
+    <!-- ---------------------------- -->
+
+
+    <!-- getElementsByTagName()-->
+    <div>Hazal Yılmaz</div>
+    <p>Js Eğitim Seti</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <hr> 
+    <!-- ---------------------------- -->
+
+    <!-- getElementsByClassName()-->
+    <div class="bicim iki">HTML Eğitim</div>
+    <div class="bicim">CSS Eğitim</div>
+    <div class="bicim">JS Eğitim</div>
+    <div class="bicim iki">JQery Eğitim</div>
+    <br>
+    <div>Sonuç <span id="sonuca" style="font-weight: 600;"></span></div>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- implementaion -->
+    <div id="sonucAlanii"></div>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- body -->
+    <button onclick="islemSari()">Sarı</button>
+    <button onclick="islemMavi()">Mavi</button>
+    <button onclick="islemMor()">Mor</button>
+    <button onclick="islemSiyah()">Siyah</button>
+
+    <hr> 
+    <!-- ---------------------------- -->
+    <!-- locator -->
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum fugit tenetur pariatur dolor, esse iusto quibusdam, adipisci sunt soluta placeat aut inventore obcaecati hic debitis cupiditate, temporibus eius culpa nisi reiciendis? Libero consequatur architecto aut recusandae tempore! Eligendi fuga, soluta voluptatum, delectus iste itaque unde totam illo voluptas ullam mollitia?</div>
+    <div><button onclick="ornekk()">Yukarı Git</button></div>
+
+    <hr>
+    <!-- ---------------------------- -->
+    <!-- Links -->
+    <a href="#">Js Eğitim Seti</a> <br>
+    <a href="#">HTML Eğitim Seti</a> <br>
+    <a href="#">CSS Eğitim Seti</a>  <br>
+    <div>Linkler: <span id="sonuc_alaniiii"></span></div>
+
+    <hr>
+    <!-- ---------------------------- -->
+    <!-- addEventListener -->
+    <div id="sonuc_eventListener"></div>
+    
+    <hr>
+    <!-- ---------------------------- -->
+    <!-- addEventListener -->
+    <div id="sonuc_removeEventListener"></div>
+    <button onclick="sonlandir()">Event Listener Remove</button>
+
+    <hr>
+    <!-- ---------------------------- -->
+    <!-- querySelector -->
+    <div class="birinci_query">Javascript Eğitim Seti 5</div>
+    <div class="birinci_query">Javascript Eğitim Seti 5</div>
+    <div class="birinci_query">Javascript Eğitim Seti 5</div>
+    <div class="birinci_query">Javascript Eğitim Seti 5</div>
+    <div class="birinci_query">Javascript Eğitim Seti 5</div>
+    <button onclick="f_querySelector()">İşlemi gerçekleştir</button> <br>
+
+    <script src="/dom_documents//getElementById.js"></script>
+    <script src="/dom_documents//getElementsByName.js"></script>
+    <script src="/dom_documents//getElementsByName-ex2.js"></script>
+    <script src="/dom_documents//getElementsByTagName.js"></script>
+    <script src="/dom_documents//getElementsByClassName.js"></script>
+    <script src="/dom_documents//doctype.js"></script>
+    <script src="/dom_documents//documentElement.js"></script>
+    <script src="/dom_documents//implementation.js"></script>
+    <script src="/dom_documents//body.js"></script>
+    <script src="/dom_documents//head.js"></script>
+    <script src="/dom_documents/locator.js"></script>
+    <script src="/dom_documents/url.js"></script>
+    <script src="/dom_documents/domain.js"></script>
+    <script src="/dom_documents/lastModified.js"></script>
+    <script src="/dom_documents/links.js"></script>
+    <script src="/dom_documents/script.js"></script>
+    <script src="/dom_documents/createElement.js"></script>
+    <script src="/dom_documents/createCommant.js"></script>
+    <script src="/dom_documents/addEventListener.js"></script>
+    <script src="/dom_documents/removeEventListener.js"></script>
+    <script src="/dom_documents/styleSheets.js"></script>
+    <script src="/dom_documents/querySelector.js"></script>
+
+
+</body>
+</html>
