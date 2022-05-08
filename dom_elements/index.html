@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .o-bir {
+            color: red;
+        }
+
+        .o-iki {
+            background-color: aqua;
+        }
+
+        .o-uc {
+            width: 300px;
+            height: 30px;
+            padding-top: 5px;
+            text-align: center;
+            border: 1px dotted black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- accessKey -->
+    <h3>Accesskey</h3>
+    <a id="baslangicBir" href="https://www.google.com.tr" target="_blank" accesskey="1">Google' a git</a>
+    <div>Kısayol Tuşu: <span id="bir"></span> </div>
+    <br>
+
+    <a id="baslangicIki" href="https://www.yandex.com.tr" target="_blank" accesskey="2">Yandexe git</a>
+    <div>Kısayol Tuşu: <span id="iki"></span> </div>
+    <br>
+
+
+    <hr>
+    <!-- focus -->
+    <h3>focus</h3>
+    <button onclick="ornek_focus()">Odaklan</button>
+    <br>
+    <a id="focus_id" href="https://www.google.com.tr" target="_blank" contenteditable="true">Google a git</a>
+
+
+    <hr>
+    <!-- blur -->
+    <h3>blur</h3>
+    <button onclick="ornek_focus1()">Odaklan</button>
+    <button onclick="ornek_blur()">Odaktan Çık</button>
+    <br>
+    <a id="baglanti_id" href="https://www.google.com.tr" target="_blank" contenteditable="true">Google a git</a>
+
+
+    <hr>
+    <!-- classList -->
+    <h3>classList</h3>
+    <button onclick="ornek_classList()">İşlem Yap</button>
+    <button onclick="ornek_classList_item()">item metodu</button>
+    <button onclick="ornek_classList_length()">length metodu</button>
+    <button onclick="ornek_classList_add()">add metodu</button>
+
+    <div id="alan1">JS Eğitim Seti</div>
+    <div id="sonuc1"></div>
+    
+
+    <hr>
+    <!-- tagName -->
+    <h3>tagName</h3>
+    <div id="ornek_tagName">JS eğitim</div>
+    <div id="sonuc_tagName"></div>
+
+
+    <hr>
+    <!-- title -->
+    <h3>title</h3>
+    <div id="bir_title" title="Hazal Yılmaz">JS eğitim seti</div>
+    <div id="deger_title"></div>
+
+
+    <hr>
+    <!-- lang -->
+    <h3>lang</h3>
+    <div id="ornek_lang" lang="tr">JS Eğitim Seti</div>
+    <div id="sonuc_lang"></div>
+
+
+    <hr>
+    <!-- tabIndex -->
+    <h3>tabIndex</h3>
+    <div id="ornek_tabIndex1" tabindex="1">JS Eğitim Seti</div>
+    <div id="ornek_tabIndex2" tabindex="2">HTML Eğitim Seti</div>
+    <div id="ornek_tabIndex3" tabindex="3">CSS Eğitim Seti</div>
+    
+    <div id="sonuc_tabIndex"></div>
+
+
+    <hr>
+    <!-- contentEditable -->
+    <h3>contentEditable</h3>
+    <div id="ornek_contentEditable" contenteditable="true">Hazal</div>
+    <div id="sonuc_contentEditable"></div>
+
+
+    <hr>
+    <!-- nodeType -->
+    <h3>nodeType</h3>
+    <div id="ornek_nodeType">Javascript Eğitim Seti</div>
+    <div id="sonuc_nodeType"></div>
+    <br>
+    <button onclick="dugumBul()">Düğüm Bul</button>
+    <div class="Hazal">Hazal <span class="Yılmaz">Yılmaz</span>Javascript</div>
+    <div id="sonuc_n"></div>
+
+
+    <script src="/dom_elements/nodeType.js"></script>
+    <script src="/dom_elements/contentEditable.js"></script>
+    <script src="/dom_elements/tabIndex.js"></script>
+    <script src="/dom_elements/lang.js"></script>
+    <script src="/dom_elements/title.js"></script>
+    <script src="/dom_elements/tagName.js"></script>
+    <script src="/dom_elements/classList.js"></script>
+    <script src="/dom_elements/blur.js"></script>
+    <script src="/dom_elements/focus.js"></script>
+    <script src="/dom_elements/accessKey.js"></script>
+</body>
+</html>
