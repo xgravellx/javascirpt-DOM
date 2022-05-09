@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h3>onclick</h3>
+    <button onclick="btn_onclick()">Tıkla</button>
+    <div id="sonnuc_onclick"></div>
+
+    <hr>
+    <h3>ondblclick</h3>
+    <button ondblclick="btn_ondblclick()">Çift Tıkla</button>
+
+    <hr>
+    <h3>onmousedown</h3>
+    <div id="id_onmousedown" onmousedown="ornek_onmousedown()">Buraya Yıklayınız</div>
+
+    <hr>
+    <h3>oncontextmenu</h3>
+    <div oncontextmenu="ornek_oncontextmenu()">Buraya sağ tıklayınız</div>
+
+    <hr>
+    <h3>onmouseover</h3>
+    <div id="id_onmouseover" onmouseover="ornek_mouseover()">JS Eğitim seti</div>
+
+    <hr>
+    <h3>onmouseenter</h3>
+    <span id="id_onmouseenter" onmouseover="ornek_mouseenter()" style="border: 1px solid red;">JS Eğitim seti</span>
+
+    <hr>
+    <h3>onmouseleave</h3>
+    <span id="id_onmouseleave" onmouseleave="ornek_mouseleave()" style="border: 1px solid black;">JS Eğitim seti</span>
+
+    <hr>
+    <h3>onmouseup</h3>
+    <div class="mouseup" onmouseup="ex_mouseup()">Sol Basılı Tıklama</div>
+
+    <hr>
+    <h3>onwell</h3>
+    <div id="mousewell" onmousewheel="ex_well()" style="height: 100px; border: 1px solid rebeccapurple;">Hazal</div>
+    
+    <hr>
+    <h3>detail</h3>
+    <button onclick="ornek_detail()">Tıkla</button>
+    <div id="sonuc_detail"></div>
+
+
+    
+    <script src="/dom_events/detail.js"></script>
+    <script src="/dom_events/onwhell.js"></script>
+    <script src="/dom_events/onmouseup.js"></script>
+    <script src="/dom_events/onmouseleave.js"></script>
+    <script src="/dom_events/onmouseenter.js"></script>
+    <script src="/dom_events/onmouseover.js"></script>
+    <script src="/dom_events/oncontextmenu.js"></script>
+    <script src="/dom_events/onmousedown.js"></script>
+    <script src="/dom_events/ondblclick.js"></script>
+    <script src="/dom_events/onclick.js"></script>
+</body>
+</html>
