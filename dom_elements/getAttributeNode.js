@@ -1,0 +1,2 @@
+let kontrol_ornek_getAttributeNode = document.getElementById("ornek_getAttributeNode").getAttributeNode("style").value;
+document.getElementById("sonuc_getAttributeNode").innerHTML = kontrol_ornek_getAttributeNode;

@@ -23,6 +23,23 @@
             border: 1px dotted black;
         }
 
+        .ornek_lt {
+            padding: 5px;
+            border-left: 5px solid rebeccapurple;
+            border-top: 5px solid greenyellow;
+        }
+
+        .ornek_wh {
+            width: 100px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .offset_tl_c {
+            margin: 30px;
+            border: 2px solid greenyellow;
+        }
+
     </style>
 </head>
 <body>
@@ -294,8 +311,72 @@
     </ol>
 
 
+    <hr>
+    <!-- hasAttribute -->
+    <h3>hasAttribute</h3>
+    <div id="ornek_hasAttribute">Lorem, ipsum.</div>
+    <div id="sonuc_hasAttribute"></div>
 
 
+    <hr>
+    <!-- getAttribute -->
+    <h3>getAttribute</h3>
+    <div id="ornek_getAttribute">Lorem, ipsum.</div>
+    <div id="sonuc_getAttribute"></div>
+
+
+    <hr>
+    <!-- getAttributeNode -->
+    <h3>getAttributeNode</h3>
+    <div id="ornek_getAttributeNode" style="border: 1px solid red;">Lorem, ipsum.</div>
+    <div id="sonuc_getAttributeNode"></div>
+
+
+    <hr>
+    <!-- setAttribute -->
+    <h3>setAttribute</h3>
+    <button onclick="ornek_setAttribute()">Ekle</button>
+    <br>
+    <a id="baglanti_setAttr" target="_blank">Bağlantıya Git</a>
+
+
+    <hr>
+    <!-- removeAttribute -->
+    <h3>removeAttribute</h3>
+    <button onclick="ornek_removeAttribute()">Sil</button>
+    <br>
+    <a href="#" id="baglanti_removeAttr" target="_blank">Bağlantıya Git</a>
+
+
+    <hr>
+    <!-- clientLeft-Top -->
+    <h3>clientLeft-Top</h3>
+    <div id="client_lt" class="ornek_lt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, distinctio?</div>
+    <div id="sonuc_client_lt"></div>
+
+
+    <hr>
+    <!-- clientWidth-clientHeight -->
+    <h3>clientWidth-clientHeight</h3>
+    <div id="client_wh" class="ornek_wh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, distinctio?</div>
+    <div id="sonuc_client_wh"></div>
+
+
+    <hr>
+    <!-- offsetLeft-offsetTop -->
+    <h3>offsetLeft-offsetTop</h3>
+    <div id="offset_tl" class="offset_tl_c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, distinctio?</div>
+    <div id="sonuc_offset_tl"></div>
+
+
+    <script src="/dom_elements/offsetLeft-offsetTop.js"></script>
+    <script src="/dom_elements/clientWidth-clientHeight.js"></script>
+    <script src="/dom_elements/clientLeft-Top.js"></script>
+    <script src="/dom_elements/removeAttribute.js"></script>
+    <script src="/dom_elements/setAttribute.js"></script>
+    <script src="/dom_elements/getAttributeNode.js"></script>
+    <script src="/dom_elements/getAttribute.js"></script>
+    <script src="/dom_elements/hasAttribute.js"></script>
     <script src="/dom_elements/replaceChild.js"></script>
     <script src="/dom_elements/removeChild.js"></script>
     <script src="/dom_elements/appendChild.js"></script>
