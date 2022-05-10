@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Events</title>
 </head>
-<body>
+<body onload="ex_onload()" onunload="ex_onunload()" onbeforeunload="return ex_beforeunload()">
     <h3>onclick</h3>
     <button onclick="btn_onclick()">Tıkla</button>
     <div id="sonnuc_onclick"></div>
@@ -48,8 +48,64 @@
     <button onclick="ornek_detail()">Tıkla</button>
     <div id="sonuc_detail"></div>
 
+    <hr>
+    <h3>onkeydown</h3>
+    <input type="text" onkeydown="ex_onkeydown()">    
 
-    
+    <hr>
+    <h3>onkeypress</h3>
+    <textarea onkeypress="ex_keypress()" cols="30" rows="10"></textarea>
+    <div id="sonuc-keyPress1"></div>
+
+    <hr>
+    <h3>onkeyup</h3>
+    <textarea onkeyup="ex_keyup()" cols="30" rows="10"></textarea>
+    <div id="sonuc-keyUp"></div>
+
+    <hr>
+    <h3>key</h3>
+    <input type="text" id="text-alani" onkeydown="ex_keypress()">
+    <div id="result-key"></div>
+
+    <hr>
+    <h3>onload</h3>
+
+    <hr>
+    <h3>onload</h3>
+
+    <hr>
+    <h3>onbeforeunload</h3>
+
+    <hr>
+    <h3>onbeforeunload</h3>
+    <button onhashchange="ex_hash()">URL Değiştir</button>
+    <div id="result-hash"></div>
+
+    <hr>
+    <h3>onscroll</h3>
+    <div id="alan_onscroll" onscroll="ex_scroll()" style="border: 2px double red; width: 200px; height: 200px; overflow: scroll;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, tempore veritatis. Neque, dignissimos. Sit, illum! Natus harum odio saepe, explicabo, sapiente eaque incidunt perferendis non, maxime laborum earum enim. Placeat, eveniet veritatis ipsam explicabo quibusdam sit molestiae rerum fugiat voluptatem, distinctio pariatur fugit saepe, expedita at deleniti exercitationem impedit quos?</div>
+
+    <hr>
+    <h3>ontoggle</h3>
+    <details>
+        <summary>Hazal</summary>
+        <div>Javascript</div>
+        <div>PHP</div>
+        <div>HTML</div>
+        <div>CSS</div>
+
+    </details>
+
+    <script src="/dom_events/ontoggle.js"></script>
+    <script src="/dom_events/onscroll.js"></script>
+    <script src="/dom_events/onhashchange.js"></script>
+    <script src="/dom_events/onbeforeunload.js"></script>
+    <script src="/dom_events/onunload.js"></script>
+    <script src="/dom_events/onload.js"></script>
+    <script src="/dom_events/key.js"></script>
+    <script src="/dom_events/onkeyup.js"></script>
+    <script src="/dom_events/onkeypress.js"></script>
+    <script src="/dom_events/onkeydown.js"></script>
     <script src="/dom_events/detail.js"></script>
     <script src="/dom_events/onwhell.js"></script>
     <script src="/dom_events/onmouseup.js"></script>
